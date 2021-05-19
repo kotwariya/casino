@@ -1,0 +1,14 @@
+.number-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem 0;
+
+	.number-window {
+		background-color: #333;
+		border: 1px solid black;
+		font-size: 6rem;
+		padding: 1rem 2rem;
+		color: white;
+	}
+}

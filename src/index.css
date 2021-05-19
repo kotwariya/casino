@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Dosis", sans-serif;
+	line-height: 1.6;
+	background-color: #fff;
+	background: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+	color: #333;
+}
+
+ul {
+	list-style: none;
+}
