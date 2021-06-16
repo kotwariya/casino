@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/header/NavBar";
+import Content from "./components/content/Content";
+import Footer from "./components/footer/Footer";
+import Game from "./components/content/Game";
+import LogIn from "./components/content/LogIn";
+import { useSelector } from "react-redux";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const isPopEnable = useSelector((state) => state.popUpEnable);
+	const isLogInEnable = useSelector((state) => state.logInEnable);
+	return (
+		<>
+			{isLogInEnable && <LogIn />}
+			{isPopEnable && <Game />}
+			<NavBar />
+			<Content />
+			<Footer />
+		</>
+	);
 }
 
 export default App;

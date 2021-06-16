@@ -1,0 +1,23 @@
+.main-container {
+	display: flex;
+	flex-direction: column;
+
+	.action-container {
+		display: flex;
+		justify-content: space-around;
+		padding: 3rem 0;
+
+		button {
+			background-color: rgb(3, 121, 121);
+			padding: 1rem 3rem;
+			font-size: 1rem;
+			font-weight: bold;
+			border-radius: 15px;
+			border: none;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
